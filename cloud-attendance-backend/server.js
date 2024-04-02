@@ -30,6 +30,11 @@ const attendanceSchema = new mongoose.Schema({
 
 const Attendance = mongoose.model("Attendance", attendanceSchema);
 
+// Route handler for root URL
+app.get("/", (req, res) => {
+  res.send("Server is running.");
+});
+
 // Create a route to handle attendance submission
 app.post("/attendance", async (req, res) => {
   console.log("Request method:", req.method);
