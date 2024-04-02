@@ -52,7 +52,7 @@ async function handleFormSubmit(event) {
   const requestData = { date, student: studentName, attendanceStatus };
 
   try {
-    const response = await fetch("http://localhost:5501/attendance", {
+    const response = await fetch("http://localhost:5502/attendance", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(requestData),

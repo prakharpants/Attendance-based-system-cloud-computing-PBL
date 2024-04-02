@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const app = express();
-const PORT = process.env.PORT || 5501;
+const PORT = process.env.PORT || 5502;
 
 // Configure CORS middleware
 app.use(cors());
