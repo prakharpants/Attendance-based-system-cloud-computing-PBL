@@ -1,0 +1,139 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main styles */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.form-container,
+.list-container {
+  width: 45%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  width: 45%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; /* Add margin to create space */
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* List styles */
+.list-container {
+  width: 45%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px; /* Add margin to create space */
+}
+
+#attendance-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.list-header .date,
+.list-header .name,
+.list-header .roll,
+.list-header .prn,
+.list-header .status {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #fff; /* Add divider between columns */
+}
+
+#attendance-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc; /* Add divider between rows */
+}
+
+#attendance-list li:last-child {
+  border-bottom: none; /* Remove divider for last row */
+}
+
+#attendance-list li span {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #ccc; /* Add divider between columns */
+  padding: 0 5px; /* Add spacing between content and dividers */
+}
+
+#attendance-list li span:last-child {
+  border-right: none; /* Remove divider for last column */
+}
+
+.form-group div {
+  display: inline-block;
+  margin-right: 20px; /* Adjust the margin as needed */
+}

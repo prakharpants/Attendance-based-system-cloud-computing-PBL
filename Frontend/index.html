@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud Attendance System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cloud Attendance System</h1>
+    </header>
+    <main class="container">
+      <div class="form-container">
+        <h2>Enter Attendance</h2>
+        <form id="attendance-form">
+          <div class="form-group">
+            <label for="attendance-date">Select Date:</label>
+            <input
+              type="date"
+              id="attendance-date"
+              name="attendanceDate"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="student-dropdown">Select Student:</label>
+            <select id="student-dropdown" name="student" required>
+              <option value="">Select Student</option>
+              <!-- Options will be dynamically added by JavaScript -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Attendance:</label>
+            <div>
+              <input
+                type="checkbox"
+                id="present-checkbox"
+                name="attendanceStatus"
+                value="present"
+              />
+              <label for="present-checkbox">Present</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="absent-checkbox"
+                name="attendanceStatus"
+                value="absent"
+              />
+              <label for="absent-checkbox">Absent</label>
+            </div>
+          </div>
+          <button type="submit">Submit Attendance</button>
+        </form>
+      </div>
+      <div class="list-container" id="attendance-list-container">
+        <h2>Attendance List</h2>
+        <ul id="attendance-list">
+          <li class="list-header">
+            <span class="date">Date</span>
+            <span class="name">Name</span>
+            <span class="roll">Roll No.</span>
+            <span class="prn">PRN</span>
+            <span class="status">Status</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; PBL by Yash,Manu,Swarit,Prakhar</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
